@@ -1,0 +1,421 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/*----------Navbar----------*/
+/*fondo del navbar*/
+.nav-fondo {
+    background-color: #EC443B;
+}
+
+/*peso de fuente,margen a la derecha y espaciado de los <a> del navbar.
+Borde abajo para el efecto hover de un borde blanco.*/
+.nav-nav-fondo a {
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    padding: 27px 32px;
+    margin-right: 8px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    transition: 400ms ease-in-out 0s;
+}
+
+/*efecto hover de los <a> del navbar.*/
+.nav-fondo-a:hover {
+    background-color: #E75454;
+    border-bottom: 2px solid #fff;
+    transition: 400ms ease-in-out 0s;
+}
+
+/*icono de hamburguesa para el menu en dispositivos moviles.*/
+.icono-menu {
+    margin-top: 16px;
+    transition: all .3s ease 0s;
+}
+
+/*efecto hover del icono de hamburguesa.*/
+.icono-menu:hover {
+    transition: all .3s ease 0s;
+    color: rgba(255, 255, 255, 0.637);
+    cursor: pointer;
+}
+
+/*espaciado del logo(letras)*/
+.icono h3 {
+    letter-spacing: 0px;
+}
+
+/*--------- Menu movil ---------*/
+
+.movil {
+    display: none;
+}
+
+.movil a {
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    margin: 8px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    transition: 400ms ease-in-out 0s;
+}
+
+.movil a:hover {
+    background-color: #E75454;
+    transition: 400ms ease-in-out 0s;
+}
+
+/*---------- Header parallax ----------*/
+
+@media (min-width: 1200px) { 
+    .parallax {
+        margin-top: 5em;
+        background-image: url('../img/parallax1.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax-titulo {
+        letter-spacing: -1.5px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 60px;
+        color: #fff;
+    }
+
+    .parallax-texto {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.15px;
+        color: #fff;
+    }
+ }
+
+ @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .parallax {
+        margin-top: 5em;
+        background-image: url('../img/parallax2.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax-titulo {
+        letter-spacing: -1.5px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 60px;
+        color: #fff;
+    }
+
+    .parallax-texto {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.15px;
+        color: #fff;
+    }
+ }
+
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+    .parallax {
+        margin-top: 9em;
+        background-image: url('../img/parallax3.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 510px;
+    }
+
+    .parallax-titulo {
+        letter-spacing: -1.5px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 60px;
+        color: #fff;
+    }
+
+    .parallax-texto {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.15px;
+        color: #fff;
+    }
+ }
+
+ @media (min-width: 320px) and (max-width: 767.98px) { 
+    .parallax {
+        margin-top: 4em;
+        background-image: url('../img/parallax4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+    }
+
+    .parallax-titulo {
+        letter-spacing: -1.5px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 60px;
+        color: #fff;
+    }
+
+    .parallax-texto {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.15px;
+        text-align: center;
+        color: #fff;
+    }
+  }
+
+/*---------- seccion Why Visit Canada? ----------*/
+
+.whyVisit-img, .whyVisit-contenido {
+    width: 50%;
+}
+
+.whyVisit-contenido {
+    padding: 0 5%;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+
+.whyVisit-contenido h2 {
+    line-height: 60px;
+}
+
+@media (min-width: 320px) and (max-width: 991.98px) { 
+    .whyVisit-contenedor {
+        flex-direction: column;
+    }
+
+    .whyVisit-img, .whyVisit-contenido {
+        width: 100%;
+        padding: 5%;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+    }
+
+    .whyVisit-img {
+        order: 2;
+    }
+
+    .whyVisit-contenido {
+        order: 1;
+    }
+
+ }
+
+ /*--------- Places ---------*/
+
+.place-contenido, .place-video {
+    width: 50%;
+    padding: 5%;
+}
+
+.place-contenido {
+    padding: 5%;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+
+.place-contenido h2 {
+    line-height: 60px;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) { 
+    .place-contenedor {
+        flex-direction: column;
+    }
+
+    .place-contenido, .place-video {
+        width: 100%;
+    }
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .place-contenedor {
+        flex-direction: column;
+    }
+
+    .place-contenido, .place-video {
+        width: 100%;
+    }
+ }
+
+.place, .galeria {
+    background-color: rgb(230, 255, 253);
+}
+
+ /*--------- Galeria ---------*/
+
+ .galeria {
+     padding: 5%;
+ }
+ 
+.foto {
+    width: 25%;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) { 
+    .foto {
+        width: 100%;
+    }
+    
+    .foto img {
+        vertical-align: top;
+        width: 100%;
+    }
+    
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .foto {
+        width: 50%;
+    }
+    
+    .foto img {
+        vertical-align: top;
+        width: 100%;
+    }
+ }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .foto img {
+        vertical-align: top;
+        width: 100%;
+        opacity: .6;
+        transition: opacity 500ms ease-in-out 0s;
+    }
+    
+    .foto img:hover {
+        opacity: 1;
+        transition: opacity 500ms ease-in-out 0s;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .foto img {
+        vertical-align: top;
+        width: 100%;
+        opacity: .6;
+        transition: opacity 500ms ease-in-out 0s;
+    }
+    
+    .foto img:hover {
+        opacity: 1;
+        transition: opacity 500ms ease-in-out 0s;
+    }
+ }
+
+
+/*--------- Contacto ---------*/
+
+:root {
+    --primario: #303F9F;
+    --light-primario: #BBDEFB;
+    --blanco: #f2f2f2;
+    --divider: #B6B6B6;
+    --error: #D32F2F;
+}
+
+.centrado {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.contacto {
+    width: 100%;
+    color: var(--blanco);
+}
+
+.formulario {
+    width: 100%;
+    margin: auto;
+}
+
+.input-groups {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.input-groups input[type="text"], 
+.input-groups input[type="email"], 
+.input-groups textarea {
+    color: var(--primario);
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    background-color: none;
+    border: none;
+    border-bottom: 2px solid var(--light-primario);
+    transition: all .3s ease 0s;
+}
+
+.input-groups textarea {
+    min-height: 100px;
+    max-height: 300px;
+}
+
+.input-groups input[type="text"]:focus, 
+.input-groups input[type="email"]:focus, 
+.input-groups textarea:focus, 
+.input-groups input[type="text"]:active, 
+.input-groups input[type="email"]:active, 
+.input-groups textarea:active {
+    outline: none;
+    border-bottom: 2px solid var(--primario);
+    transition: all .3s ease 0s;
+}
+
+.label {
+    color: var(--primario);
+    position: absolute;
+    top: 16px;
+    left: 0;
+    line-height: 16px;
+    margin-left: 16px;
+    transition: all .3s ease;
+}
+
+.active {
+    color: var(--divider);
+    top: -12px;
+    font-size: 12px;
+    line-height: 12px;
+    transition: all .3s ease 0s;
+}
+
+.error {
+    border-bottom: 2px solid var(--error);
+}
+
+.error-label {
+    color: var(--error);
+}
+
+.btn-submit {
+    background-color: var(--primario);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #fff;
+    width: 100%;
+    padding: 16px 0;
+    border: 0;
+    transition: all .3s ease 0s;
+}
+
+.btn-submit:hover {
+    background-color: #47509b;
+    transition: all .3s ease 0s;
+}

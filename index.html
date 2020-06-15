@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Estructura Base</title>
+</head>
+<body>
+  <!-- Home -->
+  <header>
+    <div>
+      <nav class="nav nav-fondo d-flex fixed-top">
+        <div class="nav-contenedor container d-flex justify-content-between align-items-md-center flex-md-column flex-lg-row">
+          <div class="logo">
+            <h1 class="h3 text-white my-3">
+              <i class="fab fa-canadian-maple-leaf"></i>
+              Canada
+            </h1>
+          </div>
+          <div class="nav-nav-fondo d-none d-md-flex">
+            <a href="#" class="nav-link text-white nav-fondo-a">Home</a>
+            <a href="#" class="nav-link text-white nav-fondo-a">Abaout</a>
+            <a href="#" class="nav-link text-white nav-fondo-a">Place</a>
+            <a href="#" class="nav-link text-white nav-fondo-a">Contact</a>
+          </div>
+          <div class="d-block d-md-none">
+              <span class="text-white" onclick="efecto();">
+                <i class="h2 fas fa-bars icono-menu"></i>
+              </span>
+          </div>
+        </div>
+
+        <div id="movil" class="movil w-100 d-md-none">
+          <div class="p-3">
+            <a href="#" class="nav-link text-white">Home</a>
+            <a href="#" class="nav-link text-white">Abaout</a>
+            <a href="#" class="nav-link text-white">Place</a>
+            <a href="#" class="nav-link text-white">Contact</a>
+          </div>
+        </div>
+      </nav>
+      
+
+      <div class="parallax py-5 py-lg-5">
+        <div class="py-5 py-lg-5">
+          <div class="py-4 py-lg-5">
+            <div class="container d-flex flex-column align-items-center py-4 py-lg-5">
+              <div class="pt-5">
+                <h2 class="parallax-titulo">Visit canada</h2>
+              </div>
+              <div class="pb-4">
+                <p class="parallax-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quam aperiam harum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Abaout -->
+  <section class="whyVisit">
+    <div class="whyVisit-contenedor d-flex">
+      <div class="whyVisit-img">
+        <img loading="lazy" src="img/thumb_1.jpg" class="w-100" alt="">
+      </div>
+      <div class="whyVisit-contenido d-flex flex-column align-self-center">
+        <h2>Why Visit Canada?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima saepe corporis repellat repellendus non voluptatibus. Sit praesentium cum, ratione alias asperiores debitis vero quam saepe nobis perspiciatis, veniam delectus. Quaerat!</p> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat esse, tenetur cupiditate quos ut eius cumque in commodi doloremque unde minus quasi est perspiciatis nisi autem. Et reiciendis possimus error!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Place -->
+  <section class="place">
+    <div class="place-contenedor d-flex">
+      <div class="place-contenido d-flex flex-column align-self-center">
+        <h2>Places</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellat hic facilis! Sapiente velit iusto ducimus praesentium error, possimus in cumque ut autem nihil consequuntur, nisi similique corrupti, repellendus asperiores.</p>
+      </div>
+      <div class="place-video d-flex flex-column align-self-center">
+        <iframe class="w-100" height="315" src="https://www.youtube.com/embed/YpOn37xLel0?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section class="galeria w-100">
+    <div class="galeria-contenedor d-flex flex-wrap">
+      <!--------- imagen ---------->
+      <div class="foto">
+        <a href="#" data-toggle="modal" data-target="#thumb_2"><img loading="lazy" src="img/thumb_2.jpg" alt=""></a>
+      </div>
+
+      <!--------- modal con imagen ---------->
+      <div class="modal fade" id="thumb_2" tabindex="-1" role="dialog" aria-labelledby="mimodal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal" aria-label="cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" loading="lazy" src="img/thumb_2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------- imagen ---------->
+      <div class="foto">
+        <a href="#" data-toggle="modal" data-target="#thumb_8"><img loading="lazy" src="img/thumb_8.jpg" alt=""></a>
+      </div>
+
+      <!--------- modal con imagen ---------->
+      <div class="modal fade" id="thumb_8" tabindex="-1" role="dialog" aria-labelledby="mimodal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal" aria-label="cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" loading="lazy" src="img/thumb_8.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------- imagen ---------->
+      <div class="foto">
+        <a href="#" data-toggle="modal" data-target="#thumb_4"><img loading="lazy" src="img/thumb_4.jpg" alt=""></a>
+      </div>
+
+      <!--------- modal con imagen ---------->
+      <div class="modal fade" id="thumb_4" tabindex="-1" role="dialog" aria-labelledby="mimodal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal" aria-label="cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" loading="lazy" src="img/thumb_4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------- imagen ---------->
+      <div class="foto">
+        <a href="#" data-toggle="modal" data-target="#thumb_5"><img loading="lazy" src="img/thumb_5.jpg" alt=""></a>
+      </div>
+
+      <!--------- modal con imagen ---------->
+      <div class="modal fade" id="thumb_5" tabindex="-1" role="dialog" aria-labelledby="mimodal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal" aria-label="cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" loading="lazy" src="img/thumb_5.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------- imagen ---------->
+      <div class="foto">
+        <a href="#" data-toggle="modal" data-target="#thumb_6"><img loading="lazy" src="img/thumb_6.jpg" alt=""></a>
+      </div>
+
+      <!--------- modal con imagen ---------->
+      <div class="modal fade" id="thumb_6" tabindex="-1" role="dialog" aria-labelledby="mimodal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal" aria-label="cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" loading="lazy" src="img/thumb_6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------- imagen ---------->
+      <div class="foto">
+        <a href="#" data-toggle="modal" data-target="#thumb_7"><img loading="lazy" src="img/thumb_7.jpg" alt=""></a>
+      </div>
+
+      <!--------- modal con imagen ---------->
+      <div class="modal fade" id="thumb_7" tabindex="-1" role="dialog" aria-labelledby="mimodal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal" aria-label="cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" loading="lazy" src="img/thumb_7.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------- imagen ---------->
+      <div class="foto">
+        <a href="#" data-toggle="modal" data-target="#thumb_3"><img loading="lazy" src="img/thumb_3.jpg" alt=""></a>
+      </div>
+
+      <!--------- modal con imagen ---------->
+      <div class="modal fade" id="thumb_3" tabindex="-1" role="dialog" aria-labelledby="mimodal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal" aria-label="cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" loading="lazy" src="img/thumb_3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------- imagen ---------->
+      <div class="foto">
+        <a href="#" data-toggle="modal" data-target="#thumb_9"><img loading="lazy" src="img/thumb_9.jpg" alt=""></a>
+      </div>
+    </div>
+
+    <!--------- modal con imagen ---------->
+    <div class="modal fade" id="thumb_9" tabindex="-1" role="dialog" aria-labelledby="mimodal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal" aria-label="cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="w-100" loading="lazy" src="img/thumb_9.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------- Contacto ---------->
+  <section class="contacto">
+    <div>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41304228.472054884!2d-130.16780954911093!3d50.81245269730997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2smx!4v1592168888997!5m2!1sen!2smx" class="w-100" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="container">
+        <div class="container row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex flex-column align-self-center">
+            <img src="img/thumb_10.png" class="w-100" alt="">
+          </div>
+          <div class="col col-sm-12 col-md-12 col-lg-6 centrado">
+            <form method="POST" action="" class="formulario w-100" id="formulario" name="formulario_registro" autocomplete="off">
+              <div>
+                <div class="input-groups">
+                  <input type="text" name="nombre" id="nombre" required>
+                  <label class="label active" for="nombre">Nombre:</label>
+                </div>
+        
+                <div class="input-groups">
+                  <input type="email" name="email" id="email" required>
+                  <label class="label active" for="email">Correo:</label>
+                </div>
+        
+                <div class="input-groups">
+                  <textarea name="mensaje" id="mensaje" required></textarea>
+                  <label class="label active" for="mensaje">Mensaje:</label>
+                </div>
+        
+                <button type="submit" class="btn-submit" id="btn-submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!---------- Footer-pie de pagina ---------->
+  <footer class="w-100 bg-dark">
+    <div class="container-fluid p-5">
+      <div class="text-white">
+        <p class="h5">Copyright Team SSLADD</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
